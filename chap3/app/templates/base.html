@@ -1,0 +1,18 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Chapter 3</title>
+      {% else %}
+      <title>Welcome to Chapter 3!</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>
+            Chapter 3:
+            <a href="/index">Home</a>
+            <a href="/login">Login</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
